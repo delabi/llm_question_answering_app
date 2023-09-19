@@ -83,7 +83,6 @@ if __name__ == '__main__':
                 bytes_data = uploaded_file.read()
                 file_name = os.path.join('./',uploaded_file.name)
 
-
                 with open(file_name, 'wb') as f:
                     f.write(bytes_data)
 
