@@ -76,7 +76,8 @@ if __name__ == '__main__':
         k = st.number_input('k', min_value=1, max_value=20, value=3, on_change=clear_history)
         add_data = st.button('Add Data', on_click=clear_history)
         filename = 'filename'
-        st.text(filename)
+        st.text(api_key)
+
 
         if uploaded_file and add_data:
             with st.spinner('Reading, chunking and embedding file ...'):
